@@ -1,0 +1,223 @@
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\roslyn\csc.exe
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\roslyn\vbc.exe
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\roslyn\VBCSCompiler.exe
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\SAILI.dll.config
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\SAILI.dll
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\SAILI.pdb
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\Antlr3.Runtime.dll
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\DotNet.Highcharts.dll
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\EntityFramework.dll
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\EntityFramework.SqlServer.dll
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\Microsoft.Owin.dll
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\Microsoft.Owin.Security.dll
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\Microsoft.Threading.Tasks.dll
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\Newtonsoft.Json.dll
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\Owin.dll
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\PagedList.dll
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\PagedList.Mvc.dll
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\SendGrid.SmtpApi.dll
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\SendGridMail.dll
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\System.Web.Helpers.dll
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\System.Web.Mvc.dll
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\System.Web.Optimization.dll
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\System.Web.Razor.dll
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\System.Web.WebPages.dll
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\System.Web.WebPages.Razor.dll
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\WebGrease.dll
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\Microsoft.Threading.Tasks.xml
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\PagedList.xml
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\PagedList.Mvc.xml
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\System.Web.Helpers.xml
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\System.Web.Mvc.xml
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\System.Web.Optimization.xml
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\System.Web.Razor.xml
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\System.Web.WebPages.xml
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\System.Web.WebPages.Razor.xml
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\Antlr3.Runtime.pdb
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\Newtonsoft.Json.xml
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\EntityFramework.xml
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\EntityFramework.SqlServer.xml
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\Microsoft.Owin.xml
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\Microsoft.Owin.Security.xml
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\obj\Release\SAILI.Migrations.InitialCreate.resources
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\obj\Release\SAILI.Migrations.intializeOwner.resources
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\obj\Release\SAILI.Migrations.role.resources
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\obj\Release\SAILI.Migrations.initializeSaltOwner.resources
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\obj\Release\SAILI.Migrations.InitializeTraderAccount.resources
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\obj\Release\SAILI.Migrations.updateOwner.resources
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\obj\Release\SAILI.Migrations.updateOwnerNumber.resources
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\obj\Release\SAILI.Migrations.updateOwner1.resources
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\obj\Release\SAILI.Migrations.IntializeManagement.resources
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\obj\Release\SAILI.Migrations.updateManagementLogOff.resources
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\obj\Release\SAILI.Migrations.migrationUpdate.resources
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\obj\Release\SAILI.Migrations.InitalizeShareTrading.resources
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\obj\Release\SAILI.Migrations.deleteManagement.resources
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\obj\Release\SAILI.Migrations.updateOwner2.resources
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\obj\Release\SAILI.Migrations.initalizeReferentialIntegrity.resources
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\obj\Release\SAILI.Migrations.updateSector.resources
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\obj\Release\SAILI.Migrations.addBoolDeleteOwner.resources
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\obj\Release\SAILI.Migrations.UpdateStockPrice.resources
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\obj\Release\SAILI.Migrations.deleteCompany.resources
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\obj\Release\SAILI.Migrations.InitializeCompany.resources
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\obj\Release\SAILI.Migrations.update.resources
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\obj\Release\SAILI.Migrations.updatePostcodeId.resources
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\obj\Release\SAILI.Migrations.InitializePortfolioBuy.resources
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\obj\Release\SAILI.Migrations.updateBuy.resources
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\obj\Release\SAILI.Migrations.updatePostcodeRequired.resources
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\obj\Release\SAILI.Migrations.addSells.resources
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\obj\Release\SAILI.Migrations.updateAttributeNames.resources
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\obj\Release\SAILI.Migrations.instantateOlympicBoard.resources
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\obj\Release\SAILI.csproj.GenerateResource.Cache
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\obj\Release\SAILI.dll
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\obj\Release\SAILI.pdb
+C:\Users\Kiet Lam\Documents\Visual Studio 2015\SAILI\SAILI\obj\Release\SAILI.csprojResolveAssemblyReference.cache
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\roslyn\csc.exe
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\roslyn\vbc.exe
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\roslyn\VBCSCompiler.exe
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\SAILI.dll.config
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\SAILI.dll
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\SAILI.pdb
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\Antlr3.Runtime.dll
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\DotNet.Highcharts.dll
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\EntityFramework.dll
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\EntityFramework.SqlServer.dll
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\Microsoft.Owin.dll
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\Microsoft.Owin.Security.dll
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\Microsoft.Threading.Tasks.dll
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\Newtonsoft.Json.dll
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\Owin.dll
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\PagedList.dll
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\PagedList.Mvc.dll
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\SendGrid.SmtpApi.dll
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\SendGridMail.dll
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\System.Web.Helpers.dll
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\System.Web.Mvc.dll
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\System.Web.Optimization.dll
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\System.Web.Razor.dll
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\System.Web.WebPages.dll
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\System.Web.WebPages.Razor.dll
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\WebGrease.dll
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\Microsoft.Threading.Tasks.xml
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\PagedList.xml
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\PagedList.Mvc.xml
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\System.Web.Helpers.xml
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\System.Web.Mvc.xml
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\System.Web.Optimization.xml
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\System.Web.Razor.xml
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\System.Web.WebPages.xml
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\System.Web.WebPages.Razor.xml
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\Antlr3.Runtime.pdb
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\Newtonsoft.Json.xml
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\EntityFramework.xml
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\EntityFramework.SqlServer.xml
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\Microsoft.Owin.xml
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\Microsoft.Owin.Security.xml
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\obj\Release\SAILI.csprojResolveAssemblyReference.cache
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\obj\Release\SAILI.Migrations.InitialCreate.resources
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\obj\Release\SAILI.Migrations.intializeOwner.resources
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\obj\Release\SAILI.Migrations.role.resources
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\obj\Release\SAILI.Migrations.initializeSaltOwner.resources
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\obj\Release\SAILI.Migrations.InitializeTraderAccount.resources
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\obj\Release\SAILI.Migrations.updateOwner.resources
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\obj\Release\SAILI.Migrations.updateOwnerNumber.resources
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\obj\Release\SAILI.Migrations.updateOwner1.resources
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\obj\Release\SAILI.Migrations.IntializeManagement.resources
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\obj\Release\SAILI.Migrations.updateManagementLogOff.resources
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\obj\Release\SAILI.Migrations.migrationUpdate.resources
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\obj\Release\SAILI.Migrations.InitalizeShareTrading.resources
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\obj\Release\SAILI.Migrations.deleteManagement.resources
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\obj\Release\SAILI.Migrations.updateOwner2.resources
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\obj\Release\SAILI.Migrations.initalizeReferentialIntegrity.resources
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\obj\Release\SAILI.Migrations.updateSector.resources
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\obj\Release\SAILI.Migrations.addBoolDeleteOwner.resources
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\obj\Release\SAILI.Migrations.UpdateStockPrice.resources
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\obj\Release\SAILI.Migrations.deleteCompany.resources
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\obj\Release\SAILI.Migrations.InitializeCompany.resources
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\obj\Release\SAILI.Migrations.update.resources
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\obj\Release\SAILI.Migrations.updatePostcodeId.resources
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\obj\Release\SAILI.Migrations.InitializePortfolioBuy.resources
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\obj\Release\SAILI.Migrations.updateBuy.resources
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\obj\Release\SAILI.Migrations.updatePostcodeRequired.resources
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\obj\Release\SAILI.Migrations.addSells.resources
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\obj\Release\SAILI.Migrations.updateAttributeNames.resources
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\obj\Release\SAILI.Migrations.instantateOlympicBoard.resources
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\obj\Release\SAILI.csproj.GenerateResource.Cache
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\obj\Release\SAILI.csproj.CoreCompileInputs.cache
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\obj\Release\SAILI.dll
+C:\Users\Kiet_Lam\Desktop\SAILI (3)\SAILI\SAILI\obj\Release\SAILI.pdb

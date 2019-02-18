@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="saili" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Kiet\ Lam\\Documents\\Visual\ Studio\ 2015\\SAILI\\SAILI\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\Kiet\ Lam\\Documents\\Visual\ Studio\ 2015\\SAILI\\SAILI\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="SailiDbContext-Web.config Connection String" description="" value="Data Source=tcp:sailiserver.database.windows.net,1433;Initial Catalog=sailiDb;User ID=admin1;Password=caesar55Bc$;MultipleActiveResultSets=False;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Kiet\ Lam\\Documents\\Visual\ Studio\ 2015\\SAILI\\SAILI\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='SailiDbContext']/@connectionString" />
+  </parameter>
+</parameters>
