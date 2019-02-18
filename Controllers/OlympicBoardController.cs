@@ -42,7 +42,6 @@ namespace SAILI.Controllers
                         if(itemTrader.OwnerID.Equals(itemOwner.OwnerID)){
                             TempData["TradingAccountID"] = itemTrader.TradingAccountID;
                             check = true;
-                            break;
                         }
                     }
                 }
