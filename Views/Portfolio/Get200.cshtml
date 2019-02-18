@@ -1,0 +1,76 @@
+﻿@model IEnumerable<SAILI.Models.Listings>
+
+@{
+    ViewBag.Title = "Get 200";
+    Layout = "~/Views/Shared/Membership.cshtml";
+}
+
+<h1><b>Get 200</b></h1>
+
+<p>
+    @Html.ActionLink("Return Home?", "CloseWindow")
+</p>
+<table class="table">
+    <tr>
+        <th style="color: #0b0c0b">
+            @Html.DisplayNameFor(model => model.Symbol)
+        </th>
+        <th style="color: #0b0c0b">
+            @Html.DisplayNameFor(model => model.CompanyName)
+        </th>
+        <th style="color: #0b0c0b">
+            @Html.DisplayNameFor(model => model.Open)
+        </th>
+        <th style="color: #0b0c0b">
+            @Html.DisplayNameFor(model => model.Close)
+        </th>
+        <th style="color: #0b0c0b">
+            @Html.DisplayNameFor(model => model.Change)
+        </th>>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            @if (item == null)
+            {
+                break;
+            }
+            <td style="color: #0b0c0b">
+                @Html.DisplayFor(modelItem => item.Symbol)
+            </td>
+            <td style="color: #0b0c0b">
+                @Html.DisplayFor(modelItem => item.CompanyName)
+            </td>
+            <td style="color: #0b0c0b">
+                @item.Open.ToString("C")
+            </td>
+            <td style="color: #0b0c0b">
+                @item.Close.ToString("C")
+            </td>
+            @if (item.Change < 0)
+            {
+                <td style="color: #fc3d37">
+                    @item.Change.ToString("C")
+                </td>
+            }
+            else if (item.Change > 0)
+            {
+                <td style="color: #108810">
+                    @item.Change.ToString("C")
+                </td>
+            }
+            else
+            {
+                <td style="color: #0b0c0b">
+                    @item.Change.ToString("C")
+                </td>
+            }
+            <td style="color: #0b0c0b">
+                @Html.ActionLink("Buy", "Edit")
+            </td>
+        </tr>
+    }
+</table>
+

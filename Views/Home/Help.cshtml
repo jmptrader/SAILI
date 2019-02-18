@@ -1,0 +1,27 @@
+﻿@model SAILI.Models.Home
+
+@{
+    ViewBag.Title = "Help";
+    Layout = "~/Views/Shared/Membership.cshtml";
+}
+
+<h2>Help</h2>
+
+<section id="Form">
+    <h2>
+       Contact Name: @Html.DisplayFor(model => model.HelpName)
+    </h2>
+    <h2>
+       Phone Number: @Html.DisplayFor(model => model.HelpPhoneNumber)
+    </h2>
+    <h2>
+       Email: @Html.DisplayFor(model => model.HelpEmail)
+    </h2>
+    <p>
+        @Html.ActionLink("Email Help", "EmailForm", new { id = Model.HomeID })
+    </p>
+    <p>
+        @Html.ActionLink("Return Home?", "Index", new { id = Model.HomeID })
+    </p>
+
+</section>

@@ -1,0 +1,108 @@
+﻿@model SAILI.Models.BuyViewModel
+@{
+    ViewBag.Title = "Confirm Buy";
+    Layout = "~/Views/Shared/Membership.cshtml";
+}
+
+<h2>Confirm Buy</h2>
+
+@using (Html.BeginForm("Buy", "Portfolio", FormMethod.Post, new { id = "buyForm", @class = "navbar-right" }))
+{
+    @Html.AntiForgeryToken()
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Symbol)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CompanyName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Open)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PurchasePrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Change)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quantity)
+            </th>
+            <th></th>
+        </tr>
+        <tr>
+            <td style="color: #0b0c0b">
+                @Html.DisplayFor(model => model.Symbol)
+                @Html.ValidationMessageFor(model => model.Symbol, "", new { @class = "text-danger" })
+                @Html.HiddenFor(model => model.Symbol)
+            </td>
+            <td style="color: #0b0c0b">
+                @Html.DisplayFor(model => model.CompanyName)
+                @Html.ValidationMessageFor(model => model.CompanyName, "", new { @class = "text-danger" })
+                @Html.HiddenFor(model => model.CompanyName)
+            </td>
+            <td style="color: #0b0c0b">
+                @Model.Open.ToString("C")
+                @Html.ValidationMessageFor(model => model.Open, "", new { @class = "text-danger" })
+                @Html.HiddenFor(model => model.Open)
+            </td>
+            <td style="color: #0b0c0b">
+                @Model.PurchasePrice.ToString()
+                @Html.ValidationMessageFor(model => model.PurchasePrice, "", new { @class = "text-danger" })
+                @Html.HiddenFor(model => model.PurchasePrice)
+            </td>
+            @if (Model.Change < 0)
+            {
+                <td style="color: #fc3d37">
+                    @Model.Change.ToString("C")
+                    @Html.ValidationMessageFor(model => model.Change, "", new { @class = "text-danger" })
+                    @Html.HiddenFor(model => model.Change)
+                </td>
+                <td>
+                    @Html.EditorFor(model => model.Quantity, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Quantity, "", new { @class = "text-danger" })
+                </td>
+                <td>
+                    <input type="submit" value="Buy" />
+                </td>
+            }
+            else if (Model.Change > 0)
+            {
+                <td style="color: #108810">
+                    @Model.Change.ToString("C")
+                    @Html.ValidationMessageFor(model => model.Change, "", new { @class = "text-danger" })
+                    @Html.HiddenFor(model => model.Change)
+                </td>
+                <td>
+                    @Html.EditorFor(model => model.Quantity, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Quantity, "", new { @class = "text-danger" })
+                </td>
+                <td>
+                    <input type="submit" value="Buy" />
+                </td>
+            }
+            else
+            {
+                <td style="color: #0b0c0b">
+                    @Model.Change.ToString("C")
+                    @Html.ValidationMessageFor(model => model.Change, "", new { @class = "text-danger" })
+                    @Html.HiddenFor(model => model.Change)
+                </td>
+                <td>
+                    @Html.EditorFor(model => model.Quantity, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Quantity, "", new { @class = "text-danger" })
+                </td>
+                <td>
+                    <input type="submit" value="Buy" />
+                </td>
+            }
+        </tr>
+    </table>
+    if (TempData["BuyException"] != null)
+    {
+        <p style="color: #fc3d37"><strong>@TempData["BuyException"]</strong></p>
+    }
+}
+
+

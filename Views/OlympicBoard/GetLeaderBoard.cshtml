@@ -1,0 +1,118 @@
+﻿@model IEnumerable<SAILI.Models.SortWinner>
+
+@{
+    ViewBag.Title = "Top3";
+    Layout = "~/Views/Shared/Membership.cshtml";
+}
+
+<p class="clear" />
+<p class="clear" />
+
+<h1>Olympian Score Board</h1>
+
+
+<script src="http://code.highcharts.com/highcharts.js"></script>
+
+<script>
+    $(function () {
+        var chart, merge = Highcharts.merge;
+        var goldAmount = @TempData["GoldAmount"];
+        var silverAmount = @TempData["SilverAmount"];
+        var bronzeAmount = @TempData["BronzeAmount"];
+
+        $(document).ready(function () {
+            var perShapeGradient = {
+                x1: 0,
+                y1: 0,
+                x2: 1,
+                y2: 0
+            };
+            var colors = Highcharts.getOptions().colors;
+            colors = [{
+                linearGradient: perShapeGradient,
+                stops: [
+                    [0, 'rgb(255, 223, 0)'],
+                    [1, 'rgb(255, 223, 0)']
+                ]
+            }, {
+                linearGradient: merge(perShapeGradient),
+                stops: [
+                    [0, 'rgb(192, 192, 192)'],
+                    [1, 'rgb(192, 192, 192)']
+                ]
+            }, {
+                linearGradient: merge(perShapeGradient),
+                stops: [
+                    [0, 'rgb(205, 127, 50)'],
+                    [1, 'rgb(205, 127, 50)']
+                ]
+            },
+            ]
+            chart = new Highcharts.Chart({
+                chart: {
+                    renderTo: 'container',
+                    type: 'column',
+                    backgroundColor: 'black'
+                },
+                title: {
+                    text: null
+                },
+                xAxis: {
+                    categories: ['@TempData["SilverName"]', '@TempData["GoldName"]', '@TempData["BronzeName"]']
+                },
+                plotOptions: {
+                    column: {
+                        cursor: 'pointer',
+                        dataLabels: {
+                            enabled: true,
+                            color: colors[0],
+                            style: {
+                                fontWeight: 'bold',
+                                color: 'white'
+                            },
+                            formatter: function () {
+                                return this.y;
+                            }
+                        }
+                    }
+                },          
+                series: [{
+                    name: name,
+                    data: [{
+                        y: silverAmount,
+                        color: colors[1]
+                    }, {
+                        y: goldAmount,
+                        color: colors[0]
+                    }, {
+                        y: bronzeAmount,
+                        color: colors[2]
+                    }],
+                    color: 'black'
+                }],
+                exporting: {
+                    enabled: false
+                },
+                credits: { enabled: false },
+                legend: { enabled: false }, yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'Leader Board'
+                    },
+                    stackLabels: {
+                        enabled: false
+                    }
+                },
+            });
+        });
+
+    });
+</script>
+
+<div id="container" style="min-width: 700px; height: 400px; margin-left: 200px; bottom: 0"></div>
+<p class="clear" />
+<p>
+    @Html.ActionLink("Return Home?", "Details", "TraderAccount", new{TradingAccountID= TempData["TradingAccountID"]}, null);
+</p>
+<p class="clear" />
+<p class="clear" />

@@ -1,0 +1,134 @@
+﻿@model SAILI.Models.Owner
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.10.0.min.js" type="text/javascript"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.9.2/jquery-ui.min.js" type="text/javascript"></script>
+    <link href="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.9.2/themes/blitzer/jquery-ui.css" rel="Stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/Empty.css")" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Create Trading Account</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(function () {
+                $("#txtCustomer").autocomplete({
+                    source: function (request, response) {
+                        var element = $('#txtCustomer').val()
+                        if (element.length < 4) {
+                            return false;
+                        }
+                        $.ajax({
+                            url: '/Home/GetLocality/',
+                            data: JSON.stringify({ 'post': element }),
+                            dataType: "json",
+                            type: "POST",
+                            contentType: "application/json; charset=utf-8",
+                            success: function (data) {
+                                response($.map(data, function (item) {
+                                    return {
+                                        label: item.postcode + ', ' + item.Locality + ', ' + item.State,
+                                        value: item.value,
+                                    };
+                                }))
+                            },
+                            error: function (response) {
+                                alert(response.responseText);
+                            },
+                            failure: function (response) {
+                                alert(response.responseText);
+                            }
+                        });
+                    },
+                    select: function (e, i) {
+                        $("#hfCustomer").val(i.item.val);
+                    },
+                    minLength: 1
+                });
+            });
+        });
+        $(function () {
+            $("#DOB").datepicker();
+        });
+    </script>
+    <h2>Create Trader Account</h2>
+    <br />
+    <section id="Form">
+        @using (Html.BeginForm("Create", "Owner", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-horizontal">
+                <hr />
+                <div class="form-group">
+                    @Html.LabelFor(model => model.FirstName, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.FirstName, new { htmlAttributes = new { @class = "form-control", placeholder = Html.Display("First Name") } })
+                        @Html.ValidationMessageFor(model => model.FirstName, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.MiddleName, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.MiddleName, new { htmlAttributes = new { @class = "form-control", placeholder = Html.Display("Middle Name") } })
+                        @Html.ValidationMessageFor(model => model.MiddleName, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.LastName, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.LastName, new { htmlAttributes = new { @class = "form-control", placeholder = Html.Display("Last Name") } })
+                        @Html.ValidationMessageFor(model => model.LastName, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.DOB, htmlAttributes: new { @class = "control-label col-md-2"})
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.DOB, new { htmlAttributes = new { id = "DOB" } })
+                        @Html.ValidationMessageFor(model => model.DOB, "", new { @class = "text-danger", placeholder= "MM/DD/YYYY" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.AddressNumber, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.AddressNumber, new { htmlAttributes = new { @class = "form-control", placeholder = Html.Display("Address Number") } })
+                        @Html.ValidationMessageFor(model => model.AddressNumber, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.AddressName, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.AddressName, new { htmlAttributes = new { @class = "form-control", placeholder = Html.Display("Address Name") } })
+                        @Html.ValidationMessageFor(model => model.AddressName, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.PostcodeID, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.PostcodeID, new { htmlAttributes = new { id= "txtCustomer", placeholder = Html.Display("Postcode") } })
+                        @Html.ValidationMessageFor(model => model.PostcodeID, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                    <input type="hidden" id="hfCustomer" name="CustomerId" />
+                    <br /><br />
+
+                    <input type="submit" id="btnSubmit" value="Submit" />
+                    <br /><br />
+                </div>
+        }
+    </section>
+</body>
+</html>
+

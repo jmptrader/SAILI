@@ -1,0 +1,45 @@
+﻿@model SAILI.Models.Home
+
+@{
+    ViewBag.Title = "Help";
+    Layout = "~/Views/Shared/Membership.cshtml";
+}
+
+<h2>Help</h2>
+
+<div>
+    <h4>Help</h4>
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HelpName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HelpName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HelpPhoneNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HelpPhoneNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HelpEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HelpEmail)
+        </dd>
+
+    </dl>
+</div>
+
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.HomeID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

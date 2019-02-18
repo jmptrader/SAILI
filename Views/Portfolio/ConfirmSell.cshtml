@@ -1,0 +1,124 @@
+﻿@model SAILI.Models.Sell
+
+@{
+    ViewBag.Title = "ConfirmSell";
+    Layout = "~/Views/Shared/Membership.cshtml";
+    decimal Change = Model.SoldPrice - Model.PurchasePrice;
+}
+
+<h2>ConfirmSell</h2>
+
+@using (Html.BeginForm("Sell", "Portfolio", FormMethod.Post, new { id = "sellForm", @class = "navbar-right" }))
+{
+    @Html.AntiForgeryToken()
+
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.BuyID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TickerSymbol)
+            </th>
+            <th>
+                @Html.Label("Company Name")
+            </th>
+            <th>
+                @Html.Label("Share Quantity")
+            </th>
+            <th>
+                @Html.Label("Paid Price")
+            </th>
+            <th>
+                @Html.Label("Current Price")
+            </th>
+            <th>
+                @Html.Label("Change")
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quantity)
+            </th>
+            <th></th>
+        </tr>
+        <tr>
+            <td style="color: #0b0c0b">
+                @Html.DisplayFor(model => model.BuyID)
+                @Html.ValidationMessageFor(model => model.BuyID, "", new { @class = "text-danger" })
+                @Html.HiddenFor(model => model.BuyID)
+            </td>
+            <td style="color: #0b0c0b">
+                @Html.DisplayFor(model => model.TickerSymbol)
+                @Html.ValidationMessageFor(model => model.TickerSymbol, "", new { @class = "text-danger" })
+                @Html.HiddenFor(model => model.TickerSymbol)
+            </td>
+            <td style="color: #0b0c0b">
+                @TempData["CompanyName"]
+            </td>
+            <td style="color: #0b0c0b">
+                @TempData["ShareQuantity"]
+            </td>
+            <td style="color: #0b0c0b">
+                @Model.PurchasePrice.ToString("C")
+                @Html.ValidationMessageFor(model => model.PurchasePrice, "", new { @class = "text-danger" })
+                @Html.HiddenFor(model => model.PurchasePrice)
+            </td>
+            <td style="color: #0b0c0b">
+                @Model.SoldPrice.ToString("C")
+                @Html.ValidationMessageFor(model => model.SoldPrice, "", new { @class = "text-danger" })
+                @Html.HiddenFor(model => model.SoldPrice)
+            </td>
+            @if (Change < 0)
+            {
+                <td style="color: #fc3d37">
+                    @Change.ToString("C")
+                </td>
+                <td>
+                    @Html.EditorFor(model => model.Quantity, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Quantity, "", new { @class = "text-danger" })
+                    @Html.HiddenFor(model => model.Quantity)
+                </td>
+                <td>
+                    <input type="submit" value="Sell" />
+                </td>
+            }
+            else if (Change > 0)
+            {
+                <td style="color: #108810">
+                    @Change.ToString("C")
+                </td>
+                <td>
+                    @Html.EditorFor(model => model.Quantity, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Quantity, "", new { @class = "text-danger" })
+                    @Html.HiddenFor(model => model.Quantity)
+                </td>
+                <td>
+                    <input type="submit" value="Sell" />
+                </td>
+            }
+            else
+            {
+                <td style="color: #0b0c0b">
+                    @Change.ToString("C")
+                </td>
+                <td>
+                    @Html.EditorFor(model => model.Quantity, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Quantity, "", new { @class = "text-danger" })
+                    @Html.HiddenFor(model => model.Quantity)
+                </td>
+                <td>
+                    <input type="submit" value="Sell" />
+                </td>
+            }
+        </tr>
+</table>
+}
+@if (TempData["SellException"] != null)
+{
+    <p style="color: #fc3d37"><strong>@TempData["SellException"]</strong></p>
+}
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+
+

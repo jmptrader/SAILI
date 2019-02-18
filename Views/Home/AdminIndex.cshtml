@@ -1,0 +1,52 @@
+﻿@model IEnumerable<SAILI.Models.Home>
+
+@{
+    ViewBag.Title = "AdminIndex";
+    Layout = "~/Views/Shared/Membership.cshtml";
+}
+
+<h2>AdminIndex</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.About)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HelpName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HelpPhoneNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HelpEmail)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.About)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HelpName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HelpPhoneNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HelpEmail)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.HomeID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.HomeID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.HomeID })
+        </td>
+    </tr>
+}
+
+</table>

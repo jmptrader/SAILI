@@ -1,0 +1,315 @@
+﻿@model SAILI.Models.TraderAccount
+@using SAILI.Models;
+@using Microsoft.AspNet.Identity;
+
+
+@{
+    ViewBag.Title = "Trader Account";
+    Layout = "~/Views/Shared/Membership.cshtml";
+    ApplicationDbContext DefaultConnection = new ApplicationDbContext();
+    SailiRepository repository = new SailiRepository();
+    Owner owner = new Owner();
+    owner = repository.GetOwner(User.Identity.GetUserId());
+    PortfolioViewModel portfolio = new PortfolioViewModel();
+    portfolio = repository.GetPortfolioVodelModel(Model.TradingAccountID);
+    decimal result = 0;
+
+    if (portfolio.PortfolioID != 0)
+    {
+        DataSerializer<string>.GetCurrentPerformance(ref portfolio);
+
+        if(portfolio.Buys.Count > 0)
+        {
+            foreach (var item in portfolio.Buys)
+            {
+                result += item.Performance;
+                result += item.TransactionAmount;
+                result = result - item.TransactionCost;
+            }
+        }
+    }
+    result += Model.Balance;
+    result = Math.Round(result, 2);
+    }
+
+<section id="Form">
+
+<div>
+    <h1>@ViewBag.Title</h1>
+    <hr />
+    <h1>Welcome @owner.FirstName @owner.LastName</h1>
+
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CreationDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CreationDate)       
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Balance)
+        </dt>
+        <dd>
+           @Model.Balance.ToString("C")
+        </dd>
+    </dl>
+</div>
+<p>
+   @Html.ActionLink("Add Money to Balance", "IncreaseBalance", "TradingAccount")
+</p>
+<p>  
+    @Html.ActionLink("Contact Help", "Index")
+</p>
+<p>
+    @Html.ActionLink("Return Home?", "CloseWindow", "Home")
+</p>
+
+</section>
+
+@if (portfolio.PortfolioID != 0)
+{
+    <section id="FormPortfolio">
+        <div>
+            <h3>Portfolio</h3>
+            <hr />
+
+            <h4>@Html.Display(portfolio.PortfolioID.ToString())</h4>
+        </div>
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.Label("Buy ID", htmlAttributes: new { @class = "control-label col-md-2" })
+                </th>
+                <th>
+                    @Html.Label("Trade Date", htmlAttributes: new { @class = "control-label col-md-2" })
+                </th>
+                <th>
+                    @Html.Label("Ticker Symbol", htmlAttributes: new { @class = "control-label col-md-2" })
+                </th>
+                <th>
+                    @Html.Label("Number of Shares", htmlAttributes: new { @class = "control-label col-md-2" })
+                </th>
+                <th>
+                    @Html.Label("Purchase Price", htmlAttributes: new { @class = "control-label col-md-2" })
+                </th>
+                <th>
+                    @Html.Label("Transaction Cost", htmlAttributes: new { @class = "control-label col-md-2" })
+                </th>
+                <th>
+                    @Html.Label("Transacation Amount", htmlAttributes: new { @class = "control-label col-md-2" })
+                </th>
+                <th>
+                    @Html.Label("Current Share Price", htmlAttributes: new { @class = "control-label col-md-2" })
+                </th>
+                <th>
+                    @Html.Label("Change", htmlAttributes: new { @class = "control-label col-md-2" })
+                </th>
+                <th></th>
+            </tr>
+            @foreach (var item in portfolio.Buys)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.BuyID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TradeDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TickerSymbol)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Quantity)
+                    </td>
+                    <td>
+                        @item.PurchasePrice.ToString("C")
+                    </td>
+                    <td>
+                        @item.TransactionCost.ToString("C")
+                    </td>
+                    <td>
+                        @item.TransactionAmount.ToString("C")
+                    </td>
+                    @{
+                        if (item.Performance < 0)
+                        {
+                            <td>
+                                @item.Close.ToString("C")
+                            </td>
+                            <td style="color:red">
+                                @item.Performance.ToString("C")
+                            </td>
+                            <td>
+                                @Html.ActionLink("Buy", "ConfirmBuy", "Portfolio", new { symbol = item.TickerSymbol }, null) |
+                                @Html.ActionLink("Sell", "ConfirmSell", "Portfolio", new { tradingAccountID = Model.TradingAccountID, buyID = item.BuyID }, null)
+                            </td>
+                        }
+                        else if (item.Performance > 0)
+                        {
+                            <td>
+                                @item.Close.ToString("C")
+                            </td>
+                            <td style="color:green">
+                                @item.Performance.ToString("C")
+                            </td>
+                            <td>
+                                @Html.ActionLink("Buy", "ConfirmBuy", "Portfolio", new { symbol = item.TickerSymbol }, null) |
+                                @Html.ActionLink("Sell", "ConfirmSell", "Portfolio", new { tradingAccountID = Model.TradingAccountID, buyID = item.BuyID }, null)
+                            </td>
+                        }
+                        else
+                        {
+                            <td>
+                                @item.Close.ToString("C")
+                            </td>
+                            <td>
+                                @item.Performance.ToString("C")
+                            </td>
+                            <td>
+                                @Html.ActionLink("Buy", "ConfirmBuy", "Portfolio", new { symbol = item.TickerSymbol }, null) |
+                                @Html.ActionLink("Sell", "ConfirmSell", "Portfolio", new { tradingAccountID = Model.TradingAccountID, buyID = item.BuyID }, null)
+                            </td>
+                        }
+                    }
+                </tr>
+                     }
+            @{ 
+                if(result > 1000000)
+                {
+                    <tr>
+                        <th>Portfolio Performance</th><th id="buffer"></th><th id="buffer"></th><th id="buffer"></th><th id="buffer"></th><th id="buffer"></th><th id="buffer"></th><th id="buffer"></th><th id="buffer"></th>
+                        <th id="buffer" style="color: green">@result.ToString("C")</th>
+                   </tr>
+                }
+                else if(result < 1000000)
+                {
+                    <tr>
+                        <th>Portfolio Performance</th><th id="buffer"></th><th id="buffer"></th><th id="buffer"></th><th id="buffer"></th><th id="buffer"></th><th id="buffer"></th><th id="buffer"></th><th id="buffer"></th>
+                        <th id="buffer" style="color: red">@result.ToString("C")</th>
+                    </tr>
+                }
+                else
+                {
+                    <tr>
+                        <th>Portfolio Performance</th><th id="buffer"></th><th id="buffer"></th><th id="buffer"></th><th id="buffer"></th><th id="buffer"></th><th id="buffer"></th><th id="buffer"></th><th id="buffer"></th>
+                        <th id="buffer" style="color:black">@result.ToString("C")</th>
+                     </tr>
+                }
+            }
+        </table>
+        <p class="clear" />
+        <p class="clear" />
+    </section>
+                        if (portfolio.Sells.Count > 0)
+                        {
+                            <section id="FormSells">
+                                <div>
+                                    <hr />
+                                    <h4>Sells</h4>
+                                    <h4>@Html.Display(portfolio.PortfolioID.ToString())</h4>
+                                </div>
+                                <table class="table">
+                                    <tr>
+                                        <th>
+                                            @Html.Label("Sell ID", htmlAttributes: new { @class = "control-label col-md-2" })
+                                        </th>
+                                        <th>
+                                            @Html.Label("Transacation Date", htmlAttributes: new { @class = "control-label col-md-2" })
+                                        </th>
+                                        <th>
+                                            @Html.Label("Buy ID", htmlAttributes: new { @class = "control-label col-md-2" })
+                                        </th>
+                                        <th>
+                                            @Html.Label("Ticker Symbol", htmlAttributes: new { @class = "control-label col-md-2" })
+                                        </th>
+                                        <th>
+                                            @Html.Label("Number of Shares", htmlAttributes: new { @class = "control-label col-md-2" })
+                                        </th>
+                                        <th>
+                                            @Html.Label("Cost Price", htmlAttributes: new { @class = "control-label col-md-2" })
+                                        </th>
+                                        <th>
+                                            @Html.Label("Sold Price", htmlAttributes: new { @class = "control-label col-md-2" })
+                                        </th>
+                                        <th>
+                                            @Html.Label("Change", htmlAttributes: new { @class = "control-label col-md-2" })
+                                        </th>
+                                        <th>
+                                            @Html.Label("Transacation Amount", htmlAttributes: new { @class = "control-label col-md-2" })
+                                        </th>
+                                        <th>
+                                            @Html.Label("Transaction Cost", htmlAttributes: new { @class = "control-label col-md-2" })
+                                        </th>
+                                    </tr>
+                                    @foreach (var item in portfolio.Sells)
+                                    {
+                                        <tr>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.SellID)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.TradeDate)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.BuyID)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.TickerSymbol)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.Quantity)
+                                            </td>
+                                            <td>
+                                                @item.PurchasePrice.ToString("C")
+                                            </td>
+                                            <td>
+                                                @item.SoldPrice.ToString("C")
+                                            </td>
+                                            @{
+                                                decimal change = (item.SoldPrice - item.PurchasePrice) * item.Quantity;
+                                                if (change < 0)
+                                                {
+                                                    <td style="color:red">
+                                                        @change.ToString("C")
+                                                    </td>
+                                                    <td>
+                                                        @item.TransactionAmount.ToString("C")
+                                                    </td>
+                                                    <td>
+                                                        @item.TransactionCost.ToString("C")
+                                                    </td>
+                                                }
+                                                else if (change > 0)
+                                                {
+                                                    <td style="color:green">
+                                                        @change.ToString("C")
+                                                    </td>
+                                                    <td>
+                                                        @item.TransactionAmount.ToString("C")
+                                                    </td>
+                                                    <td>
+                                                        @item.TransactionCost.ToString("C")
+                                                    </td>
+                                                }
+                                                else
+                                                {
+                                                    <td>
+                                                        @change.ToString("C")
+                                                    </td>
+                                                    <td>
+                                                        @item.TransactionAmount.ToString("C")
+                                                    </td>
+                                                    <td>
+                                                        @item.TransactionCost.ToString("C")
+                                                    </td>
+                                                }
+                                            }
+                                        </tr>
+                                                }
+                                </table>
+                                <p class="clear" />
+                                <p class="clear" />
+                            </section>
+                       }
+}
+

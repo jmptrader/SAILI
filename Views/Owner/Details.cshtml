@@ -1,0 +1,75 @@
+﻿@model SAILI.Models.Owner
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/Empty.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Owner</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MiddleName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MiddleName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DOB)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DOB)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AddressNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AddressNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AddressName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AddressName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PostcodeID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PostcodeID)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.OwnerID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

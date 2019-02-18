@@ -1,0 +1,30 @@
+﻿@model SAILI.Models.Sector
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/Membership.cshtml";
+}
+
+<h2>Details</h2>
+
+<div id="Form">
+<div>
+    <h4>@Model.SectorName</h4>
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+</div>

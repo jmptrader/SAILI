@@ -1,0 +1,24 @@
+﻿
+@model SAILI.Models.Home
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>SAILI</h2>
+ <hr />
+
+<section id="Form">
+    <h2>
+        @Html.DisplayFor(model => model.About)
+    </h2>
+    <p>
+        @Html.ActionLink("Login/Register", "ConvertHTTPSLogin", "SSL", routeValues: null, htmlAttributes: new { id = "loginLink", target = "_blank" })
+    </p>
+    <p>
+        @Html.ActionLink("Leave Comment", "EmailForm", "Home")
+    </p>
+</section>
+<p class="clear" />
+<p class="clear" />

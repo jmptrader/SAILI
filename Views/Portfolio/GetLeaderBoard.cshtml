@@ -1,0 +1,169 @@
+﻿@{
+    ViewBag.Title = "Top3";
+    Layout = "~/Views/Shared/Membership.cshtml";
+}
+
+<p class="clear" />
+<p class="clear" />
+
+<h1>Top 3</h1>
+
+
+<script src="http://code.highcharts.com/highcharts.js"></script>
+
+<script>
+    $(function () {
+        var chart, merge = Highcharts.merge;
+        $(document).ready(function () {
+
+
+            var perShapeGradient = {
+                x1: 0,
+                y1: 0,
+                x2: 1,
+                y2: 0
+            };
+            var colors = Highcharts.getOptions().colors;
+            colors = [{
+                linearGradient: perShapeGradient,
+                stops: [
+                    [0, 'rgb(255, 223, 0)'],
+                    [1, 'rgb(255, 223, 0)']
+                ]
+            }, {
+                linearGradient: merge(perShapeGradient),
+                stops: [
+                    [0, 'rgb(192, 192, 192)'],
+                    [1, 'rgb(192, 192, 192)']
+                ]
+            }, {
+                linearGradient: merge(perShapeGradient),
+                stops: [
+                    [0, 'rgb(205, 127, 50)'],
+                    [1, 'rgb(205, 127, 50)']
+                ]
+            },
+            ]
+
+            chart = new Highcharts.Chart({
+                chart: {
+                    renderTo: 'container',
+                    type: 'column',
+                    backgroundColor: 'black'
+                },
+                title: {
+                    text: null
+                },
+
+                xAxis: {
+                    categories: ['Mark Zuckerburg', 'Bill Gates', 'Donald Trump']
+                },
+
+                plotOptions: {
+                    column: {
+                        cursor: 'pointer',
+                        dataLabels: {
+                            enabled: true,
+                            color: colors[0],
+                            style: {
+                                fontWeight: 'bold'
+                            },
+                            formatter: function () {
+                                return this.y;
+                            }
+                        }
+                    }
+                },
+
+                series: [{
+                    name: name,
+                    data: [{
+                        y: 337540.50,
+                        color: colors[2]
+                    }, {
+                        y: 342311.37,
+                        color: colors[1]
+                    }, {
+                        y: 359874.35,
+                        color: colors[0]
+                    }],
+                    color: 'black'
+                }],
+                exporting: {
+                    enabled: false
+                },
+                credits: { enabled: false },
+                legend: { enabled: false }, yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'Leader Board'
+                    },
+                    stackLabels: {
+                        enabled: false
+                    }
+                },
+            });
+        });
+
+    });
+</script>
+
+<div id="container" style="min-width: 700px; height: 400px; margin-left: 200px; bottom: 0"></div>
+<p class="clear" />
+<p class="clear" />
+<p class="clear" />
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script type="text/javascript">
+window.onload = function () {
+	var chart = new CanvasJS.Chart("chartContainer", {
+		title: {
+			text: "Adding & Updating dataPoints"
+		},
+		data: [
+		{
+			type: "spline",
+			dataPoints: [
+				{ y: 10 }, { y: 4 }, { y: 18 }, { y: 8 }
+
+			]
+		}
+		]
+	});
+	chart.render();
+
+	$("#addDataPoint").click(function () {
+
+	var length = chart.options.data[0].dataPoints.length;
+	chart.options.title.text = "New DataPoint Added at the end";
+	chart.options.data[0].dataPoints.push({ y: 25 - Math.random() * 10});
+	chart.render();
+
+	});
+
+	$("#updateDataPoint").click(function () {
+
+	var length = chart.options.data[0].dataPoints.length;
+	chart.options.title.text = "Last DataPoint Updated";
+	chart.options.data[0].dataPoints[length-1].y = 15 - Math.random() * 10;
+	chart.render();
+
+	});
+}
+    </script>
+</head>
+<body>
+    <div id="chartContainer" style="width:100%; height:280px"></div>
+    <button id="addDataPoint">Add Data Point</button>
+    <button id="updateDataPoint">Update Data Point</button>
+</body>
+</html>
+
+
+
